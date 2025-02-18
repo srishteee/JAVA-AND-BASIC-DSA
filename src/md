@@ -1,0 +1,8 @@
+How would you sort a list of objects that are already sorted by one attribute but you want to sort them by another attribute?
+
+You can use a Comparator to sort the list by the new attribute. If the list is already sorted by one attribute,
+using a secondary sorting strategy (e.g., using thenComparing) can maintain the previous order where applicable.
+
+How to handle null values when implementing compare methods.
+We can use Comparator.nullsFirst() or Comparator.nullsLast() to define how null values should be treated.
+Here are examples for both approaches.
