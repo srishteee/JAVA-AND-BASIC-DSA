@@ -5,7 +5,7 @@ public class Test {
         Counter counter = new Counter();
         MyThread1 t1= new MyThread1(counter);
         MyThread1 t2 = new MyThread1(counter);
-      t1.start();
+      t1.start();  // two thread shared one resource above counter
       t2.start();
 
         try{
