@@ -1,0 +1,6 @@
+
+Two threads a Producer and a Consumer  share a common, fixed size buffer a s a queue.
+Thr Producer job is  to generate the data and put it into he bufffer , while the consumer's job is to consume the data
+from the buffer.
+The problem is to make ure that the producer won't produce atat if the buffer is fulll. and the consumer won't consume the data
+if the buffer is empty.

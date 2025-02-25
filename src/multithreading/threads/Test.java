@@ -1,4 +1,4 @@
-package multithreading;
+package multithreading.threads;
 
 public class Test {
     public static void main(String[] args) {
