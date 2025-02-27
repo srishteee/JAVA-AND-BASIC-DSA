@@ -7,7 +7,7 @@ public class SharedResource {
     public synchronized void addItem(){
         isItemPresent = true;
         System.out.println("producer thread calling the notify all method");
-        notifyAll();
+        notifyAll(); // it wakes up all the methods which are   waiting
     }
 
     // synchronised put the monitor lock
