@@ -10,7 +10,7 @@ public class Reverse {
         String str = scn.nextLine();
 
         char [] charArr = str.toCharArray();
-     reverseString(charArr);
+         reverseString(charArr);
         System.out.println(charArr);
 
     }

@@ -5,13 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class practice1 {
-
-
-
-
-
-
-    // List<Employee> empList = new ArrayList<>();
+//
+//     List<Employee> empList = new ArrayList<>();
 //        empList.add(new Employee(1, "abc", 28, 123, "F", "HR", "Blore", 2020));
 //        empList.add(new Employee(2, "xyz", 29, 120, "F", "HR", "Hyderabad", 2015));
 //        empList.add(new Employee(3, "efg", 30, 115, "M", "HR", "Chennai", 2014));

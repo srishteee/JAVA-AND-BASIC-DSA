@@ -18,19 +18,7 @@ public class Practice {
 //    }
 
 
-    public static final Practice obj = new Practice();
-
-    private Practice(){
-
-    }
-
-    public static Practice getInstance(){
-        return obj;
-    }
-
-    public static void main(String[] args) {
-        Practice  obj1 = Practice.getInstance();
 
 
     }
-}
+

@@ -23,5 +23,4 @@ public static int fib(int n){
             System.out.println(fib(i));
         }
     }
-
 }

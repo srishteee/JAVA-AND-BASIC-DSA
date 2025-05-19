@@ -6,3 +6,12 @@ using a secondary sorting strategy (e.g., using thenComparing) can maintain the 
 How to handle null values when implementing compare methods.
 We can use Comparator.nullsFirst() or Comparator.nullsLast() to define how null values should be treated.
 Here are examples for both approaches.
+
+
+number system
+decimal -> base 10
+binary -> base 2
+octal -> base 8
+hexadecimal -> base 16
+conversions
+b->d->h
