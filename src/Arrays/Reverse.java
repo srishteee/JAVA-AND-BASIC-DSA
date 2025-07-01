@@ -1,46 +1,35 @@
 package Arrays;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
-public class Reverse  {
+// Input: arr[] = {1, 4, 3, 2, 6, 5}
+//Output: {5, 6, 2, 3, 4, 1}
+public class Reverse {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        int arr[]= new int[n];
 
-    public static void display(int [] a) {
-        StringBuilder sb = new StringBuilder();
+        System.out.println("Enter " + n + " elements:");
 
-        for(int val: a)  {
-            sb.append(val +   "   ") ;
+        for(int i=0;i<arr.length;i++){
+          arr[i]= scn.nextInt();
+            }
+        int start = 0;
+        int end = n-1;
+
+        while(start<end){
+            int temp = arr[start];
+            arr [start]= arr[end];
+            arr[end]= temp;
+            start++;
+            end--;
         }
-        System.out.println(sb);
+        System.out.println("Reversed array:");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        }
     }
 
-
-    public static void reverse(int[] a){
-//   logic
-        int i=0;
-        int j = a.length-1;
-        if(i<j) {
-            int temp = a[i];
-            a[i]= a[j];
-            a[j]=temp;
-            i++;
-            j--;
-        }
-    }
-
-
-
-    public static void main(String[] args) throws Exception {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-        int n = Integer.parseInt(br.readLine());
-        int[] a = new int[n];
-        for(int i = 0; i < n; i++){
-            a[i] = Integer.parseInt(br.readLine());
-        }
-
-        reverse(a);
-        display(a);
-    }
-}
 
