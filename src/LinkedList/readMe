@@ -1,0 +1,34 @@
+ A LinkedList is a linear data structure where each element, called a node,
+ contains a reference (or link) to the next (and/or previous) node in the sequence.
+  Unlike arrays, linked lists do not store elements in contiguous memory locations.
+   This allows for efficient insertions and deletions at any position in the list.
+
+   Node contains :
+   Data: The value stored in the node.
+   Next Reference: A pointer or reference to the next node in the list.
+
++------+     +------+     +------+
+| Data | --> | Data | --> | Data | --> null
++------+     +------+     +------+
+
+Types:
+singly
+doubly
+circular
+
+ArrayList vs. LinkedList
+Both ArrayList and LinkedList implement the List interface in Java, but they have different performance characteristics.
+
+
+Operation                     ArrayList                   LinkedList
+
+Access (get)                  Fast (O(1))                  Slow (O(n))
+Insert/Delete at Beginning    Slow (O(n))                  Fast (O(1))
+Insert/Delete in Middle       Slow (O(n))                  O(n) (requires traversal)
+Insert/Delete at End          Fast (Amortized O(1))        Fast (O(1))
+Memory Usage                  Less (contiguous)            More (due to node overhead)
+When to Use:
+
+ArrayList → best for random access and appending.
+
+LinkedList → best for frequent insert/delete at head/middle (when traversal cost is acceptable).
